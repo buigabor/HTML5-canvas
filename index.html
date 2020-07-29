@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML5 Canvas</title>
+  </head>
+  <script src="app.js" defer></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <body>
+    <div class="canvas-wrap">
+      <canvas id="draw" width="800" height="800"></canvas>
+      <div class="sliderdiv">
+        <label for="slider">Line Width:</label>
+        <input
+          type="range"
+          min="1"
+          max="101"
+          value="50"
+          step="10"
+          class="slider"
+          id="myRange"
+        />
+        <br />
+        <input type="button" value="Rainbow On" id="rainbowBtn" />
+        <br />
+        <div id="colordiv">
+          <input type="color" id="colorpicker" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
